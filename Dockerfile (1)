@@ -7,13 +7,9 @@ RUN apk add --no-cache bash
 EXPOSE 2323
 
 RUN cd /usr/local \
-    && mkdir server \ 
-    && cd server \
-    && git clone https://github.com/Vital31/ProektTP.git \
+    && git clone https://github.com/evgen1111y/uspevaemost \
     && cd ProektTP \
-    && cd Server \
+    && cd untitled\
     && qmake \
     && make
 
-CMD cd /usr/local/server/ProektTP/Server \ 
-    && ./Server
